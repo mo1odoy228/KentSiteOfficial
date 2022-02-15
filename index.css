@@ -1,0 +1,122 @@
+
+* {
+	
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.loader-container {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader {
+	width: 50px;
+	height: 50px;
+	border: 5px solid;
+	color: #0286E7;
+	border-radius: 50%;
+	border-top-color: transparent;
+	animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+	25% {
+		color: #2ecc71;
+	}
+	50% {
+		color: #f1c40f;
+	}
+	75% {
+		color: #e74c3c;
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+header {
+	background-color: #0286E7;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 65px;
+}
+
+header nav div a {
+	text-decoration: none;
+	color: white;
+	font-size: 34px;
+}
+
+header nav div a:hover {
+	color: #22EEE5;
+	transition: .41s;
+}
+
+.hmain {
+	text-decoration: underline;
+	text-decoration-color: #22EEE5;
+}
+
+.hnews {
+	margin-left: 24px;
+}
+
+.hkents {
+	margin-left: 24px;	
+}
+
+.hgames {
+	margin-left: 24px;
+}
+
+.hanime {
+	margin-left: 24px;
+}
+
+section {
+	flex: 1 1 auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), #23E5D7), url(banner.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 27px;
+}
+
+footer {
+	background-color: #0286E7;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 65px;
+}
+
+.disc, .steam {
+	margin-left: 30px;
+}
